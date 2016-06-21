@@ -1,0 +1,55 @@
+$map: sprite-map('icons-footer/*.png',$spacing:70px);
+$icons: facebook1, twitter1,play;
+
+@each $icon in $icons {
+    .footer__item_#{$icon} 
+        .footer__icon{
+            @include get-sprite($map,$icon);
+            
+            
+    }
+}
+
+.footer{
+    background: #FFF;
+    padding-top:50px;
+    
+}
+.footer-wrap{
+    width: 970px;
+    margin: 0 auto;
+    
+   
+}
+.footer-center{
+    @include justify;
+    
+   
+}
+.footer__logo-link{
+    display: inline-block;
+     vertical-align: middle;
+    max-width: 15.3%;
+   
+    
+}
+
+
+.footer-icon{
+    max-width: 18%;
+    display: inline-block;
+    vertical-align: middle;
+    
+   
+}
+.footer__item{
+    display: inline-block;
+}
+
+.footer__text{
+    display: inline-block;
+     vertical-align: middle;
+    color: #d22856;
+    max-width: 22%;
+    
+}

@@ -1,0 +1,26 @@
+@import "compass";
+
+
+
+
+
+/* --------- mixins --------- */
+
+@import "_settings/_mixin";
+
+/* --------- adjustment --------- */
+
+@import "_settings/_adjustment";
+
+/* --------- header --------- */
+@import "_common/_header";
+
+/* --------- section stimulus --------- */
+@import "_common/_reviews";
+
+@import "_common/_price";
+
+@import "_common/_contact";
+
+
+@import "_common/_footer";

@@ -1,0 +1,58 @@
+.riviews-bg {
+    background: #FFF;
+    padding: 110px;
+    background: url(../img/comma.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+.riviews-wrap{
+    text-align: center;
+}
+.riviews-text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 680px;
+    margin: 0 30px;
+    
+}
+.riviews__comment{
+    text-align: center;
+    display: block;
+    color: #283645;
+    margin-bottom: 40px;
+}
+.riviews__name{
+    font-family: "open_sansbold";
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    color: #000;
+    margin-bottom: 20px;
+}
+.riviews__data{
+    color: #283645;
+    text-align: center;
+    display: block;
+}
+
+.controll{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+ .slider-previous {
+	
+	background-image: url(../img/riviews/previous.png);
+    width: 22px;
+	height: 42px;
+    
+}
+
+.slider-next {
+	
+	background-image: url(../img/riviews/next.png);
+    width: 22px;
+	height: 42px;
+}

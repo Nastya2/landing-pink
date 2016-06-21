@@ -1,0 +1,74 @@
+
+section.stimuls
+    header.header
+
+    
+        .container
+        
+        
+            a(href="index.html").logo__link
+            
+                img(src="img/logo-head.png").logo__img
+                .logo__text pink
+            .menu
+                - var items = ["Информация","Возможности","Отзывы","Стоимость"]
+                    ul.menu__list
+                        each item in items
+                            li.menu__item
+                                a(href="#").menu__link= item
+    .stimulis__bottom
+    
+        .container
+            .section-download
+                .section-download__text Взгляните на жизнь иначе!
+                .section-download__bottom
+                    a(href="#").btn Скачать приложение
+                .section-download__icons
+                    - var icons = ['Apple', 'Android', 'Microsoft']
+                    ul.system-icon
+                        each icon in icons
+                            li(class="system__item system__item_" + icon)
+                                a(href="#").system__link
+                                    .system__icon
+                .section-download__instruction. 
+                    Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8                    
+                
+            
+            .section-phone
+                
+                img(src="img/iphone-hover.png").iphone
+                    
+                                
+section.advantages
+    
+    
+    .advantages__title Устали от серости мегаполиса?Нам есть, что вам <br>предложить!
+    
+.advantages-grey
+    .advantages-angle
+        .advantages-wrap
+            
+            ul.advantages__list
+                li.advantages__item 
+                    img(src="img/iphone-grey.png").advantages__img
+                    span.title Поднимает настроение
+                    span.description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                li.advantages__item
+                    img(src="img/iphone-pink.png").advantages__img
+                    span.title Меняет мир вокруг
+                    span.description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                li.advantages__item
+                    img(src="img/iphone-pinksmile.png").advantages__img
+                    span.title Заводит<br>новых друзей
+                    span.description Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+
+            .advantages-24
+                .advantages__img24
+                    img(src="img/24.png").img24
+                .advantages-24__description
+                    span.title24 Эффект на 24 часа!
+                    span.title24-description Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!
+                    a(href="#").link24 Узнать больше об исследовании
+                
+
+                

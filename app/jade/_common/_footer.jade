@@ -1,0 +1,15 @@
+footer.footer
+    .footer-wrap
+        .footer-center
+      
+            a(href="index.html").footer__logo-link
+                img(src="img/logo-footer.png").logo-footer
+                .logo__text pink
+
+            - var icons = ['facebook1', 'twitter1', 'play']
+            ul.footer-icon
+                each icon in icons
+                    li(class="footer__item footer__item_" + icon)
+                        a(href="#").footer__link
+                            .footer__icon
+            .footer__text © Все права защищены                

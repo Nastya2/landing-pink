@@ -1,39 +1,57 @@
-.riviews-bg {
+.riviews-slider{
     background: #FFF;
-    padding: 110px;
+    padding: 150px 0;
     background: url(../img/comma.png);
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 10%;
     
 }
 
 .riviews-wrap{
-    text-align: center;
+    margin: 0 auto;
+    width: 74%;//от 1602.97 1186.22
 }
-.riviews-text{
+.gallery{
+    width: 85%;//1008.28
+    overflow: hidden;
     display: inline-block;
     vertical-align: middle;
-    width: 680px;
-    margin: 0 30px;
+    
     
 }
-.riviews__comment{
+.gallery ul {
+  width: 500%;
+  
+  list-style: none;
+  transition: margin-left 250ms;
+  
+  
+}
+.riviews-text li{
+    float: left;
+    width: 19.1%;//912.421
+   
+    margin: 0 20px;
     text-align: center;
+}
+.riviews__comment{
+    
     display: block;
     color: #283645;
     margin-bottom: 40px;
+    
 }
 .riviews__name{
     font-family: "open_sansbold";
     font-size: 1.3rem;
-    text-align: center;
+    
     display: block;
     color: #000;
     margin-bottom: 20px;
 }
 .riviews__data{
     color: #283645;
-    text-align: center;
+    
     display: block;
 }
 
@@ -55,4 +73,16 @@
 	background-image: url(../img/riviews/next.png);
     width: 22px;
 	height: 42px;
+}
+@include adaptive(480) {
+    
+.controll{
+    display: none;
+    }
+    .riviews-wrap {
+       width:  98%;
+    }
+    .gallery {
+        width: 97%;
+    }
 }

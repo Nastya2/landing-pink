@@ -1,42 +1,31 @@
 .price{
-   position: relative; 
-    
-}
-
-.price-angle{
-     transform-origin: left center;
-     transform: rotate(-5deg);
-     background: #f2f2f2;
-     width: 104%;
-    height: 400px;
-    
-     
-}
-.price-grey{
-    
-    width: 100%;
+   width: 100%;
     background: #f2f2f2;
-    height: 400px;
-}
-
-
-
-.price__wrap{
-    width: 900px;
-    margin: 0 auto;
+    
+    position: relative;
+    padding-bottom: 80px;
+    
+    &:after{
+    content: '';
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top:80px;
-    left:0;
-    right: 0;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: left top;
+    transform: skewY(-5deg);
+    }
+    
 }
-
 
 .price__table{
-    transform: rotate(5deg);
-   
+    
+    width: 68.81405563689605%;
+    margin: 0 auto;
     color: #000;
     border-collapse: collapse;
-
+    font-size: 1em;
     
    
 }
@@ -48,6 +37,7 @@
 td{
     border: 1px solid #e5e5e5;
     background: #FFF;
+    width: 25%;
 }
 td:not(:first-child){
     vertical-align: middle;
@@ -55,17 +45,21 @@ td:not(:first-child){
     
 }
 .price__string{
-    padding: 20px 25px; 
-    
+    padding: 2.65967446808511% 2.65967446808511% ; 
+    width: 25%;
+    box-sizing: border-box;
 }
 th{
     background: #283645; 
     font-family: "open_sansbold";
     text-transform: uppercase;
     color: #FFF;
-    width: 230px;
-    padding: 25px 25px;
+    
+    padding-top:  4.78723404255319%;
+    padding-bottom:  4.78723404255319%;
     border-left: 1px solid #FFF;
+    width: 25%;
+    
     
     &:first-child{
         border-left: none;
@@ -75,11 +69,45 @@ th{
     position: relative;
     height: 100%;
     
+    
 }
 .hit{
-  
+    display: block;
     position: absolute;
     top: 0;
-    left: 0;  
+    left: 0;
+}
+@include adaptive(1024) {
+    .price__table{
+        width: 95%
+    }
     
+}
+@include adaptive(780) {
+    .price__table{
+        width: 95%
+    }
+    
+}
+@include adaptive(710) {
+    .price__table{
+        width: 95%
+    }
+    .hit{
+      display: none;
+    }
+}
+@include adaptive(320) {
+    .d-n320 {
+        display: none;
+       
+    }
+    .price{
+       padding-top: 1px; 
+    }
+    .price__table { 
+       width: 75%;
+        margin-top: 30px;
+        
+    }
 }

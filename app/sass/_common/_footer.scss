@@ -12,11 +12,11 @@ $icons: facebook1, twitter1,play;
 
 .footer{
     background: #FFF;
-    padding-top:50px;
+    padding-top:3.66%;
     
 }
 .footer-wrap{
-    width: 970px;
+    width: 71%;
     margin: 0 auto;
     
    
@@ -28,15 +28,17 @@ $icons: facebook1, twitter1,play;
 }
 .footer__logo-link{
     display: inline-block;
-     vertical-align: middle;
-    max-width: 15.3%;
+    vertical-align: middle;
+   
    
     
 }
-
+.logo-footer{
+    display: block;
+}
 
 .footer-icon{
-    max-width: 18%;
+    
     display: inline-block;
     vertical-align: middle;
     
@@ -44,12 +46,43 @@ $icons: facebook1, twitter1,play;
 }
 .footer__item{
     display: inline-block;
+    max-width: 50px;
+    margin-left: 5px;
+    
+    &:first-child{
+        margin-left: 0px;
+    }
 }
 
 .footer__text{
     display: inline-block;
-     vertical-align: middle;
+    vertical-align: middle;
     color: #d22856;
-    max-width: 22%;
+    font-size: 1em;
     
+}
+
+@include adaptive(1024){
+    
+    .footer-wrap{
+    width: 91%;
+    }
+}
+@include adaptive(710){
+
+.footer__text{
+    display: none;
+    }
+}
+@include adaptive(480){
+    .footer__logo-link {
+        display: none;
+    }  
+    .footer-center {
+        text-align: center;
+    }
+    .footer-icon {
+        padding-top: 15px;
+    }
+   
 }

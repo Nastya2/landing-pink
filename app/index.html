@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Главная страница </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/slider.js" defer></script>
+    <script src="js/menu.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
       <section class="stimuls">
         <header class="header">
-          <div class="container"><a href="index.html" class="logo__link"><img src="img/logo-head.png" class="logo__img">
+          <div class="container"><a href="index.html" class="logo__link"><img src="img/logo-head.png" class="logo__img"><img src="img/logo-head780.png" class="logo__img780"><img src="img/logo320.png" class="logo__img320">
               <div class="logo__text">pink</div></a>
-            <div class="menu">
+            <nav class="main-menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">Информация</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Возможности</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Стоимость</a></li>
+                <li class="menu__item effect"><a href="#information" class="menu__link">Информация</a></li>
+                <li class="menu__item effect"><a href="#capabilities" class="menu__link">Возможности</a></li>
+                <li class="menu__item effect"><a href="#reviews" class="menu__link">Отзывы</a></li>
+                <li class="menu__item effect"><a href="#price" class="menu__link">Стоимость</a></li>
+              </ul><span class="nav-toggle"></span>
+              <ul class="menu__list-phone"><span class="nav-close"></span>
+                <li class="menu__item-phone"><a href="#information" class="menu__link-phone">Информация</a></li>
+                <li class="menu__item-phone"><a href="#capabilities" class="menu__link-phone">Возможности</a></li>
+                <li class="menu__item-phone"><a href="#reviews" class="menu__link-phone">Отзывы</a></li>
+                <li class="menu__item-phone"><a href="#price" class="menu__link-phone">Стоимость</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </header>
         <div class="stimulis__bottom">
@@ -40,83 +48,82 @@
                       <div class="system__icon"></div></a></li>
                 </ul>
               </div>
-              <div class="section-download__instruction">
-                Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8                    
-                
-                
-              </div>
+              <div class="section-download__instruction">Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8                    </div>
             </div>
             <div class="section-phone"><img src="img/iphone-hover.png" class="iphone"></div>
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section id="capabilities" class="advantages">
         <div class="advantages__title">Устали от серости мегаполиса?Нам есть, что вам <br>предложить!</div>
       </section>
       <div class="advantages-grey">
-        <div class="advantages-angle">
-          <div class="advantages-wrap">
-            <ul class="advantages__list">
-              <li class="advantages__item"> <img src="img/iphone-grey.png" class="advantages__img"><span class="title">Поднимает настроение</span><span class="description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span></li>
-              <li class="advantages__item"><img src="img/iphone-pink.png" class="advantages__img"><span class="title">Меняет мир вокруг</span><span class="description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span></li>
-              <li class="advantages__item"><img src="img/iphone-pinksmile.png" class="advantages__img"><span class="title">Заводит<br>новых друзей</span><span class="description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span></li>
-            </ul>
-            <div class="advantages-24">
-              <div class="advantages__img24"><img src="img/24.png" class="img24"></div>
-              <div class="advantages-24__description"><span class="title24">Эффект на 24 часа!</span><span class="title24-description">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</span><a href="#" class="link24">Узнать больше об исследовании</a></div>
-            </div>
+        <div class="advantages-wrap">
+          <ul class="advantages__list">
+            <li class="advantages__item"><img src="img/iphone-pinksmile.png" class="advantages__img">
+              <div class="advantages-descr-right"><span class="title">Поднимает настроение</span><span class="description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</span></div>
+            </li>
+            <li class="advantages__item"><img src="img/iphone-pink.png" class="advantages__img d-n">
+              <div class="advantages-descr-right"><span class="title">Меняет мир вокруг</span><span class="description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</span></div>
+            </li>
+            <li class="advantages__item"><img src="img/iphone-grey.png" class="advantages__img d-n">
+              <div class="advantages-descr-right"><span class="title">Заводит</br>новых друзей</span><span class="description">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</span></div>
+            </li>
+          </ul>
+          <div class="advantages-24">
+            <div class="advantages__img24"><img src="img/24.png" class="img24"></div>
+            <div class="advantages-24__description"><span class="title24">Эффект на 24 часа!</span><span class="title24-description">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</span><a href="#" class="link24">Узнать больше об исследовании</a></div>
           </div>
         </div>
       </div>
-      <section class="riviews-slider">
-        <div class="riviews-bg">
-          <div class="riviews-wrap"><a href="#" class="slider-previous controll"> </a>
-            <div class="riviews-text"><span class="riviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</span><span class="riviews__name">Николай Петров</span><span class="riviews__data">25 лет, водитель трамвая</span></div><a href="#" class="slider-next controll"> </a>
-          </div>
+      <section id="reviews" class="riviews-slider">
+        <div class="riviews-wrap"><a href="#" class="slider-previous controll"></a>
+          <div class="gallery">
+            <ul class="riviews-text">
+              <li><span class="riviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</span><span class="riviews__name">Иван Петров</span><span class="riviews__data">35 лет, водитель трамвая</span></li>
+              <li><span class="riviews__comment">Как здорово им пользоваться!Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</span><span class="riviews__name">Николай Петров</span><span class="riviews__data">25 лет, водитель трамвая</span></li>
+              <li><span class="riviews__comment">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</span><span class="riviews__name">Влад Петров</span><span class="riviews__data">45 лет, водитель трамвая</span></li>
+            </ul>
+          </div><a href="#" class="slider-next controll"> </a>
         </div>
       </section>
-      <section class="price">
-        <div class="price-grey">
-          <div class="price-angle">
-            <div class="price__wrap">
-              <table class="price__table">
-                <tr>
-                  <td class="price-none"> </td>
-                  <th>База <br> 1,99 USD</th>
-                  <th class="price-img"><img src="img/hit.png" class="hit"> Стандарт <br> 3,99 USD </th>
-                  <th>Анлим <br> 9,99 USD</th>
-                </tr>
-                <tr>
-                  <td class="price__string">Розовый фильтр</td>
-                  <td><img src="img/yes.png"></td>
-                  <td><img src="img/yes.png"></td>
-                  <td><img src="img/yes.png"></td>
-                </tr>
-                <tr>
-                  <td class="price__string">Смайлики</td>
-                  <td><img src="img/no.png"></td>
-                  <td><img src="img/yes.png"></td>
-                  <td><img src="img/yes.png"></td>
-                </tr>
-                <tr>
-                  <td class="price__string">Комментарии</td>
-                  <td><img src="img/no.png"></td>
-                  <td><img src="img/no.png"></td>
-                  <td><img src="img/yes.png">    </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+      <section id="price" class="price">
+        <table class="price__table">
+          <tr class="d-320">
+            <td class="price-none"> </td>
+            <th>База <br> 1,99 USD</th>
+            <th class="price-img"><img src="img/hit.png" class="hit"> Стандарт <br> 3,99 USD </th>
+            <th>Анлим <br> 9,99 USD</th>
+          </tr>
+          <tr class="d-n320">
+            <td class="price__string">Розовый фильтр</td>
+            <td><img src="img/yes.png"></td>
+            <td><img src="img/yes.png"></td>
+            <td><img src="img/yes.png"></td>
+          </tr>
+          <tr class="d-n320">
+            <td class="price__string">Смайлики</td>
+            <td><img src="img/no.png"></td>
+            <td><img src="img/yes.png"></td>
+            <td><img src="img/yes.png"></td>
+          </tr>
+          <tr class="d-n320">
+            <td class="price__string">Комментарии</td>
+            <td><img src="img/no.png"></td>
+            <td><img src="img/no.png"></td>
+            <td><img src="img/yes.png">    </td>
+          </tr>
+        </table>
       </section>
-      <section class="contacts">
-        <div class="contacts__title">Остались вопросы? Свяжитесь с нами!</div>
+      <section id="information" class="contacts">
+        <div class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</div>
         <ul class="contacts-list">
           <li class="contacts-item"><span class="data__title">Звоните: </span><span class="data__real">8 (800) 1000 900</span></li>
           <li class="contacts-item"><span class="data__title">Приезжайте в гости:</span><span class="data__real">Санкт-Петербург,<br> Невский проспект, д. 20</span></li>
           <li class="contacts-item"><span class="data__title">Пишите:</span><span class="data__real">hello@pinkapp.ru</span></li>
         </ul>
-      </section><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=r1_lY3Yshf5NMA0EMT-dnyoWOp4MvBQ6&width=100%&height=520&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+      </section>
+      <section class="map"></section>
     </div>
     <footer class="footer">
       <div class="footer-wrap">

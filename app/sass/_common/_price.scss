@@ -1,7 +1,6 @@
 .price{
-   width: 100%;
+    width: 100%;
     background: #f2f2f2;
-    
     position: relative;
     padding-bottom: 80px;
     
@@ -16,50 +15,47 @@
     transform-origin: left top;
     transform: skewY(-5deg);
     }
-    
 }
 
 .price__table{
-    
     width: 68.81405563689605%;
     margin: 0 auto;
     color: #000;
     border-collapse: collapse;
     font-size: 1em;
-    
-   
 }
 
 .price-none{
     background: transparent;
     border: none;
 }
+
 td{
     border: 1px solid #e5e5e5;
     background: #FFF;
     width: 25%;
 }
+
 td:not(:first-child){
     vertical-align: middle;
     text-align: center; 
-    
 }
+
 .price__string{
     padding: 2.65967446808511% 2.65967446808511% ; 
     width: 25%;
     box-sizing: border-box;
 }
+
 th{
     background: #283645; 
     font-family: "open_sansbold";
     text-transform: uppercase;
     color: #FFF;
-    
     padding-top:  4.78723404255319%;
     padding-bottom:  4.78723404255319%;
     border-left: 1px solid #FFF;
     width: 25%;
-    
     
     &:first-child{
         border-left: none;
@@ -68,46 +64,47 @@ th{
 .price-img{
     position: relative;
     height: 100%;
-    
-    
 }
+
 .hit{
     display: block;
     position: absolute;
     top: 0;
     left: 0;
 }
+
 @include adaptive(1024) {
     .price__table{
         width: 95%
     }
-    
 }
+
 @include adaptive(780) {
     .price__table{
         width: 95%
     }
-    
 }
+
 @include adaptive(710) {
     .price__table{
         width: 95%
     }
     .hit{
-      display: none;
+        display: none;
     }
 }
+
 @include adaptive(320) {
     .d-n320 {
         display: none;
-       
     }
+    
     .price{
-       padding-top: 1px; 
+        padding-top: 1px; 
     }
+    
     .price__table { 
-       width: 75%;
+        width: 75%;
         margin-top: 30px;
-        
     }
 }

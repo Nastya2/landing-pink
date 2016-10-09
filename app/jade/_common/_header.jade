@@ -1,36 +1,28 @@
-
-section.stimuls
+.stimuls
     header.header
-
-    
         .container
-        
-        
             a(href="index.html").logo__link
-            
-                img(src="img/logo-head.png").logo__img
-                img(src="img/logo-head780.png").logo__img780
-                img(src="img/logo320.png").logo__img320
+                img(src="img/logo-head.png" alt="logo").logo__img
+                img(src="img/logo-head780.png" alt="logo").logo__img780
+                img(src="img/logo320.png" alt="logo").logo__img320
                 .logo__text pink
             nav.main-menu
                 - var nav = ['#information',  '#capabilities', '#reviews','#price'];
-
                 - var items = ["Информация","Возможности","Отзывы","Стоимость"]
                     ul.menu__list
                         each item, index in items
                             li.menu__item.effect
                                 a(href = nav[index]).menu__link= item
-                span.nav-toggle
-                 - var items = ["Информация","Возможности","Отзывы","Стоимость"]
-
-                ul.menu__list-phone
-                    span.nav-close
+            span.nav-toggle
+            .nav-phone
+                span.nav-close
+                ul.menu-phone
+                    - var items = ["Информация","Возможности","Отзывы","Стоимость"]
                     each item, index in items
-                        li.menu__item-phone
-                            a(href = nav[index]).menu__link-phone= item
+                        li.menu-phone__item
+                            a(href = nav[index]).menu-phone__link= item
                          
     .stimulis__bottom
-    
         .container
             .section-download
                 .section-download__text Взгляните на жизнь иначе!
@@ -48,38 +40,34 @@ section.stimuls
             
             .section-phone
                 
-                img(src="img/iphone-hover.png").iphone
+                img(src="img/iphone-hover.png" alt="phone").iphone
                     
                                 
-section.advantages#capabilities
-    
-    
+.advantages#capabilities
     .advantages__title Устали от серости мегаполиса?Нам есть, что вам <br>предложить!
     
 .advantages-grey
-   
     .advantages-wrap
-
         ul.advantages__list
             li.advantages__item
-                img(src="img/iphone-pinksmile.png").advantages__img
+                img(src="img/iphone-pinksmile.png" alt="phone").advantages__img
                 div.advantages-descr-right
                     span.title Поднимает настроение
                     span.description Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
             li.advantages__item
-                img(src="img/iphone-pink.png").advantages__img.d-n
+                img(src="img/iphone-pink.png" alt="phone").advantages__img.d-n
                 div.advantages-descr-right
                     span.title Меняет мир вокруг
                     span.description Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
             li.advantages__item
-                img(src="img/iphone-grey.png").advantages__img.d-n
+                img(src="img/iphone-grey.png" alt="phone").advantages__img.d-n
                 div.advantages-descr-right
-                    span.title Заводит</br>новых друзей
+                    span.title Заводит<br>новых друзей
                     span.description Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
 
         .advantages-24
             .advantages__img24
-                img(src="img/24.png").img24
+                img(src="img/24.png" alt="clock").img24
             .advantages-24__description
                 span.title24 Эффект на 24 часа!
                 span.title24-description Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!

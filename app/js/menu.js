@@ -1,11 +1,11 @@
 
-  var nav = document.querySelector('.menu__list-phone');
+  var nav = document.querySelector('.nav-phone');
   
  document.querySelector('.nav-toggle').addEventListener('click',function(){
       nav.classList.add('open');
   });
   document.body.addEventListener('click',function(e){
-  if (e.target.className !== 'nav-toggle' && e.target.className !== 'menu__link-phone') {
+  if (e.target.className !== 'nav-toggle' && e.target.className !== 'menu-phone__link') {
         nav.classList.remove('open');
   }
   });

@@ -1,49 +1,41 @@
 $map: sprite-map('icons-footer/*.png',$spacing:70px);
-$icons: facebook1, twitter1,play;
+$icons: facebook1, twitter1, play;
 
 @each $icon in $icons {
     .footer__item_#{$icon} 
         .footer__icon{
             @include get-sprite($map,$icon);
-            
-            
-    }
+        }
 }
 
 .footer{
     background: #FFF;
     padding-top:3.66%;
-    
 }
+
 .footer-wrap{
     width: 71%;
     margin: 0 auto;
-    
-   
 }
+
 .footer-center{
     @include justify;
-    
-   
 }
+
 .footer__logo-link{
     display: inline-block;
     vertical-align: middle;
-   
-   
-    
 }
+
 .logo-footer{
     display: block;
 }
 
 .footer-icon{
-    
     display: inline-block;
     vertical-align: middle;
-    
-   
 }
+
 .footer__item{
     display: inline-block;
     max-width: 50px;
@@ -59,21 +51,21 @@ $icons: facebook1, twitter1,play;
     vertical-align: middle;
     color: #d22856;
     font-size: 1em;
-    
 }
 
 @include adaptive(1024){
-    
     .footer-wrap{
-    width: 91%;
+        width: 91%;
     }
 }
+
 @include adaptive(710){
 
 .footer__text{
     display: none;
     }
 }
+
 @include adaptive(480){
     .footer__logo-link {
         display: none;
@@ -84,5 +76,4 @@ $icons: facebook1, twitter1,play;
     .footer-icon {
         padding-top: 15px;
     }
-   
 }

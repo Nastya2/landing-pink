@@ -4,54 +4,49 @@
     background: url(../img/comma.png);
     background-repeat: no-repeat;
     background-position: center 10%;
-    
 }
 
 .riviews-wrap{
     margin: 0 auto;
     width: 74%;//от 1602.97 1186.22
 }
+
 .gallery{
     width: 85%;//1008.28
     overflow: hidden;
     display: inline-block;
     vertical-align: middle;
-    
-    
 }
+
 .gallery ul {
-  width: 500%;
-  
-  list-style: none;
-  transition: margin-left 250ms;
-  
-  
+    width: 500%;
+    list-style: none;
+    transition: margin-left 250ms;
 }
+
 .riviews-text li{
     float: left;
     width: 19.1%;//912.421
-   
-    margin: 0 20px;
+     margin: 0 20px;
     text-align: center;
 }
+
 .riviews__comment{
-    
     display: block;
     color: #283645;
     margin-bottom: 40px;
-    
 }
+
 .riviews__name{
     font-family: "open_sansbold";
     font-size: 1.3rem;
-    
     display: block;
     color: #000;
     margin-bottom: 20px;
 }
+
 .riviews__data{
     color: #283645;
-    
     display: block;
 }
 
@@ -60,28 +55,28 @@
     vertical-align: middle;
 }
 
- .slider-previous {
-	
+.slider-previous {
 	background-image: url(../img/riviews/previous.png);
     width: 22px;
 	height: 42px;
-    
 }
 
 .slider-next {
-	
 	background-image: url(../img/riviews/next.png);
     width: 22px;
 	height: 42px;
 }
+
 @include adaptive(480) {
     
-.controll{
-    display: none;
+    .controll{
+        display: none;
     }
+    
     .riviews-wrap {
-       width:  98%;
+        width:  98%;
     }
+    
     .gallery {
         width: 97%;
     }

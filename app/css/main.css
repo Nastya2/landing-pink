@@ -1,5 +1,4 @@
 /* --------- mixins --------- */
-/* --------- centered --------- */
 /* --------- compass sprites --------- */
 /* --------- media queries --------- */
 /* --------- adjustment --------- */
@@ -90,8 +89,8 @@ footer {
 }
 
 .logo__link {
+  display: block;
   float: left;
-  max-width: 15.1%;
 }
 
 .logo__img {
@@ -438,17 +437,20 @@ footer {
     cursor: pointer;
   }
 
-  .menu__list-phone .nav-close {
+  .nav-close {
     background: url("../img/close.png") no-repeat;
     width: 23px;
     height: 22px;
     display: block;
     position: absolute;
+  }
+
+  .nav-phone .nav-close {
     top: 5%;
     right: 5%;
   }
 
-  .menu__list-phone {
+  .nav-phone {
     position: fixed;
     top: 0;
     right: 0;
@@ -466,19 +468,20 @@ footer {
     transform: translateY(0);
   }
 
-  .menu__item-phone {
+  .menu-phone__item {
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #FFFFFF;
+    list-style: none;
   }
 
-  .menu__link-phone {
+  .menu-phone__link {
     text-decoration: none;
     color: #FFF;
     font-size: 20px;
     text-transform: uppercase;
   }
-  .menu__link-phone:active {
+  .menu-phone__link:active {
     color: #e23371;
   }
 

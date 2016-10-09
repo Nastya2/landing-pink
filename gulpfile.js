@@ -18,7 +18,7 @@ var
 gulp.task('compass', function() {
   gulp.src('app/sass/main.scss')
     .pipe(plumber())
-    .pipe(autoprefixer(['last 15 versions', '> 1%'], { cascade: true }))
+    .pipe(autoprefixer(['last 3 versions', '> 1%'], { cascade: true }))
     .pipe(compass({
       config_file: './config.rb',
       css: 'app/css',
